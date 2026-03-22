@@ -11,7 +11,7 @@ class Battlestream < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/beeblebrox/battlestream/releases/download/v0.14.0-beta/battlestream_0.14.0-beta_darwin_amd64.tar.gz"
-      sha256 "bf669a34277df0977ef0afa2719602e1f7fdd631b716c573ead493e4780662eb"
+      sha256 "649a95943e835235140e041d1d90b9540597bedf6c73b109e45545b0a3a5fdbc"
 
       define_method(:install) do
         bin.install "battlestream"
@@ -19,7 +19,7 @@ class Battlestream < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/beeblebrox/battlestream/releases/download/v0.14.0-beta/battlestream_0.14.0-beta_darwin_arm64.tar.gz"
-      sha256 "0cc2b5063ce83754dfd3941c67f791a84c08d4471dcba809056d59a3b2e9f38b"
+      sha256 "89d188b954df98dc05835e64e245e88d0abff7f8167d555d83a0de3f4c3ab26f"
 
       define_method(:install) do
         bin.install "battlestream"
@@ -30,14 +30,14 @@ class Battlestream < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/beeblebrox/battlestream/releases/download/v0.14.0-beta/battlestream_0.14.0-beta_linux_amd64.tar.gz"
-      sha256 "187ec3e62d93d23f9bb45a87c31b89e9b4d1e8162c6887127b86115fe248ca55"
+      sha256 "cf9792d3937a70ec489d01a88607b141fb87ed9d7103c87a20382f8bac1de21a"
       define_method(:install) do
         bin.install "battlestream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/beeblebrox/battlestream/releases/download/v0.14.0-beta/battlestream_0.14.0-beta_linux_arm64.tar.gz"
-      sha256 "76408578373b71e3e069e581ee90a33ef9ebbcf00b60a1931aa9660926ce9509"
+      sha256 "3c7ae062a0698a28c2f031204e1b65e8ec53b4a35e85e8e1c6e1869f6781033f"
       define_method(:install) do
         bin.install "battlestream"
       end
