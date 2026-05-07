@@ -5,39 +5,29 @@
 class Battlestream < Formula
   desc "Hearthstone Battlegrounds stat tracker"
   homepage "https://github.com/beeblebrox/battlestream"
-  version "0.18.0-beta"
+  version "0.21.0-beta"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.18.0-beta/battlestream_0.18.0-beta_darwin_amd64.tar.gz"
-      sha256 "99b650ec7d80eb4c7bc42a31840bdbf4111112c462c26f3d62c9e7a6f53e8545"
+    url "https://github.com/beeblebrox/battlestream/releases/download/v0.21.0-beta/battlestream_0.21.0-beta_darwin_all_universal.tar.gz"
+    sha256 "47e4e71a77aff6836c4e81810618e4a9e4c69dd2f17dc54a3138cc115c224ab4"
 
-      define_method(:install) do
-        bin.install "battlestream"
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.18.0-beta/battlestream_0.18.0-beta_darwin_arm64.tar.gz"
-      sha256 "643246e6bb0a6e2aaf8d19165859d6f0a05e34ae04dfad268bff418e940103c1"
-
-      define_method(:install) do
-        bin.install "battlestream"
-      end
+    define_method(:install) do
+      bin.install "battlestream"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.18.0-beta/battlestream_0.18.0-beta_linux_amd64.tar.gz"
-      sha256 "2aa0e9ebe045e67dd4414b2ee94decc281895ea2835dd287e073ad6c44f76e71"
+      url "https://github.com/beeblebrox/battlestream/releases/download/v0.21.0-beta/battlestream_0.21.0-beta_linux_amd64.tar.gz"
+      sha256 "367fde623d689042be721e5cc84ebbe4aca9cdec0c75cc6857dd23a35268e5ae"
       define_method(:install) do
         bin.install "battlestream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.18.0-beta/battlestream_0.18.0-beta_linux_arm64.tar.gz"
-      sha256 "7c617a5ec2cf276eaf45f4b2ea21939060669c876e77ccd4f023cd8769e20d0a"
+      url "https://github.com/beeblebrox/battlestream/releases/download/v0.21.0-beta/battlestream_0.21.0-beta_linux_arm64.tar.gz"
+      sha256 "2199a661985a06469f7ab09e1c469b124db71003b534324783d5d51191968b5e"
       define_method(:install) do
         bin.install "battlestream"
       end
