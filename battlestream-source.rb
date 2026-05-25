@@ -4,9 +4,9 @@
 class BattlestreamSource < Formula
   desc "Hearthstone Battlegrounds stat tracker (built from source)"
   homepage "https://github.com/beeblebrox/battlestream"
-  url "https://github.com/beeblebrox/battlestream/archive/refs/tags/v0.22.0-beta.tar.gz"
-  sha256 "5272c03e9e03867b62c93d41782f7e3ba1b1e8963a4b3d276c6c2929de9965bc"
-  version "0.22.0-beta"
+  url "https://github.com/beeblebrox/battlestream/archive/refs/tags/v0.23.0-beta.tar.gz"
+  sha256 "418fc6e874157b352af114f1673b0e25e1f92ad5863a55cf5c1f4c800b1a13f9"
+  version "0.23.0-beta"
   license "MIT"
 
   depends_on "go" => :build
