@@ -5,12 +5,12 @@
 class Battlestream < Formula
   desc "Hearthstone Battlegrounds stat tracker"
   homepage "https://github.com/beeblebrox/battlestream"
-  version "0.24.0-beta"
+  version "0.25.0-beta"
   license "MIT"
 
   on_macos do
-    url "https://github.com/beeblebrox/battlestream/releases/download/v0.24.0-beta/battlestream_0.24.0-beta_darwin_all_universal.tar.gz"
-    sha256 "e2eb0f20d165ad9037e63cfbb7ffc0255047a30701c7957ed09f7bd77b01f8bb"
+    url "https://github.com/beeblebrox/battlestream/releases/download/v0.25.0-beta/battlestream_0.25.0-beta_darwin_all_universal.tar.gz"
+    sha256 "fec8a194195f5bfc8d7a6de395aad2bb836c6142f0b6cc05aa953d7718a3a55d"
 
     define_method(:install) do
       bin.install "battlestream"
@@ -19,15 +19,15 @@ class Battlestream < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.24.0-beta/battlestream_0.24.0-beta_linux_amd64.tar.gz"
-      sha256 "90e955872fbbea1cb2e7798ed7e1e1e3c099483b13fd31fe28e0f535192ef7d7"
+      url "https://github.com/beeblebrox/battlestream/releases/download/v0.25.0-beta/battlestream_0.25.0-beta_linux_amd64.tar.gz"
+      sha256 "09299e8b99c55d3967e64ce6915df682700675c0488fdd5a2f7ac1514311f55b"
       define_method(:install) do
         bin.install "battlestream"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/beeblebrox/battlestream/releases/download/v0.24.0-beta/battlestream_0.24.0-beta_linux_arm64.tar.gz"
-      sha256 "94596847d3071ae92978a20541642782f09c7ec6358a451df7a687ae4dab8254"
+      url "https://github.com/beeblebrox/battlestream/releases/download/v0.25.0-beta/battlestream_0.25.0-beta_linux_arm64.tar.gz"
+      sha256 "181f409b6b854308b14e4ee152c02cec307027aba8cea2dd7ae9195fa4270ede"
       define_method(:install) do
         bin.install "battlestream"
       end
